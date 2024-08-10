@@ -26,7 +26,7 @@ export default defineConfig({
       },
     }),
   ],
-  base:"/tgApp/",
+  base:"/frontTgMarket/",
   define: { 'process.env': {} },
   resolve: {
     alias: {
