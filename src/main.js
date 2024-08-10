@@ -11,14 +11,14 @@ import { createApp } from 'vue'
 import StartPage from './components/StartPage.vue'
 import App from './App.vue'
 import MainPage from './components/MainPage.vue'
-const baseUrl="/frontTgMarket"
+const baseUrl="/frontTgMarket/"
 const routes = [
-  { path: baseUrl+'/', component: StartPage },
-  { path: baseUrl+'/main', component: MainPage },
+  { path: '/', component: StartPage },
+  { path: '/main', component: MainPage },
 ]
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
+  history: createWebHistory(baseUrl),
+  routes
 })
 
 
