@@ -26,6 +26,7 @@ export default defineConfig({
       },
     }),
   ],
+  base:"/tgApp/",
   define: { 'process.env': {} },
   resolve: {
     alias: {
